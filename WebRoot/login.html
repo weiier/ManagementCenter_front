@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Home</title>
+  	<meta charset="utf-8">
+    <link rel="stylesheet" href="login/css/loginstyle.css">
+    <link rel="stylesheet" href="css/Cstyle.css">
+    <script src="login/js/jquery-1.7.1.min.js"></script>
+    <script src="login/js/jquery.easing.1.3.js"></script>
+    <script src="login/js/tms-0.4.1.js"></script>
+    <script src="login/js/slider.js"></script>
+   
+<style type="text/css">
+.XYTipsWindow .boxLoading { position: absolute; display: block; width: 90px; height: 30px; line-height: 30px; margin-left: -45px; margin-top: -15px; left: 50%; top: 50%; color: #f00; }
+.XYTipsWindow .boxLoading { width:28px; margin-left: -14px; background:url("login/images/loading.gif") no-repeat; text-indent: -999em; text-align: center; }
+.XYTipsWindow .boxTitle, .XYTipsWindow .boxTitle span, .XYTipsWindow .boxTitle span.hover, .XYTipsWindow .loadinglayer, .XYTipsWindow .tipslayer, .XYTipsWindow .arrowLeft, .XYTipsWindow .colseBtn, .XYTipsWindow .boxError em, .XYTipsWindow .dialogBtn, .XYTipsWindow .dialogBtn.hover { background-image: url("login/images/ico.png"); background-repeat: no-repeat; }
+.XYTipsWindow .boxTitle { position: relative; border: 1px solid #A6C9E1; border-bottom: none; background-position: 0 0; background-repeat: repeat-x; height: 30px; line-height: 30px; }
+.XYTipsWindow .boxTitle h3 { float: left; font-weight: normal; color: #666; font-size: 14px; margin: 0; text-indent: 10px; }
+.XYTipsWindow .boxTitle span { position: absolute; width: 10px; background-position: -80px -40px; text-indent: -10em; right: 10px; top: 10px; height: 16px; overflow: hidden; cursor: pointer; }
+.XYTipsWindow .boxTitle span.hover { background-position: -90px -40px; }
+.XYTipsWindow .loadinglayer { line-height: 40px; background-position: 0 -100px!important; }
+.XYTipsWindow .tipslayer { line-height: 20px; text-align: left; }
+.XYTipsWindow .arrowLeft { position: absolute; width: 8px; height: 16px; background-position: -20px -170px; text-indent: -9999em; z-index: 20591; overflow: hidden; }
+.XYTipsWindow .colseBtn { position: absolute; top: 5px; right: 5px; width: 8px; height: 8px; background-position: -55px -170px; text-indent: -9999em; cursor: pointer; z-index: 20591; overflow: hidden; }
+.XYTipsWindow .boxError { position: absolute; left: 50%; top: 50%; margin-left: -60px; margin-top: -15px; width: 120px; height: 30px; line-height: 30px; color: #f00; }
+.XYTipsWindow .boxError em { float: left; width:30px; height: 30px; background-position: -35px -140px; }
+.XYTipsWindow .dialogBtn { margin: 5px 5px 0 0; width:80px; height:35px; background-position: 0 -30px; border:none; color:#333; }
+.XYTipsWindow .dialogBtn.hover { background-position: 0 -65px; }
+.XYTipsWindow.shadow { box-shadow:2px 2px 5px #C0BBB5; -moz-box-shadow: 2px 2px 5px #C0BBB5; -webkit-box-shadow:2px 2px 5px #C0BBB5; }
+</style>
+ <script type="text/javascript" src="login/js/jquery.XYTipsWindow.min.2.8.js"></script>
+
+ <script type="text/javascript">
+	function reg(){
+		$.XYTipsWindow({
+			___title:"注册",
+			___content:"iframe:reg.html",
+			___width:"460",
+			___height:"360",
+			___showbg:true,
+			___drag:"___boxTitle"
+		});
+	}
+ </script>
+</head>
+<body id="page1">
+<!-- Header -->
+<header>
+    <div class="inner">
+        <h1 class="logo"><a href="login.html">ONS</a></h1>
+        <div class="fright">
+            <div class="header-meta">
+            
+       <form id="search-form"  action="loginAction" method="post">
+					<div class="text">用户名：<input type="text" name="uname"/>
+					</div>
+					
+					<div class="text">密码：<input type="password" name="upw"/>
+					</div>
+							
+					<div class="btun"><input type='submit' class='btn' value='登录'/></div>
+        </form>
+            
+               
+                <div class="col-elem">
+                  还没帐号?
+                    <span class="phone">
+                        <a href="#" onclick="reg()">注册</a>
+                    </span>
+                </div>
+            </div>
+          
+        </div>
+      
+    </div>
+    <div class="slider-container">
+        <div class="mp-slider">
+            <ul class="items">
+                <li><img src="login/images/slide-5.jpg" alt=""></li>
+                <li><img src="login/images/slide-6.jpg" alt=""></li>
+                <li><img src="login/images/slide-7.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<!-- Footer -->
+<footer>
+    <div class="copyright">
+        &copy; 2014 <strong class="footer-logo">ONS</strong>
+        <div>TrackingSystem  by KYL.com</div>
+    </div>
+    <ul class="social-list">
+    	<li><a href="#"><img src="login/images/social-link-1.jpg" alt=""></a></li>
+        <li><a href="#"><img src="login/images/social-link-2.jpg" alt=""></a></li>
+        <li><a href="#"><img src="login/images/social-link-3.jpg" alt=""></a></li>
+        <li><a href="#"><img src="login/images/social-link-4.jpg" alt=""></a></li>
+    </ul>
+</footer>
+</body>
+</html>

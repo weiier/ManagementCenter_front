@@ -1,0 +1,160 @@
+@import"forms.css";
+body{
+	background:url(../images/body-bg.gif) 50% 0;
+	font:12px/18px Arial, Helvetica, sans-serif;
+	position:relative;
+	min-width:970px;
+}
+/*----- alignment & clearing -----*/
+.fleft{float:left}
+.fright{float:right}
+.alignright{text-align:right}
+.aligncenter{text-align:center}
+.alignmiddle *{vertical-align:middle}
+/*********************************header*************************************/
+header{
+	position:relative;
+	z-index:2;	
+}
+#head{
+	background:url(../images/header-bg.png) center 0 no-repeat;
+}
+	header .inner {
+	/* 由85改为95，看下界面的header哪个好看*/
+		width:90%;
+		padding:0;
+	}
+.logo {
+	display:inline-block;
+	padding:0 !important;
+}
+.logo a {
+	position:relative;
+	background: url(../images/logo.jpg) no-repeat 0 0;
+	height:142px;
+	width:341px;
+	overflow:hidden;
+	text-indent:-99em;
+	display:block;
+}
+.header-meta {
+	text-align:right;
+	padding:31px 0 20px;
+}
+	.header-meta * {text-align:left;}
+
+.header-meta .col-elem {
+	display:inline-block;
+	width:235px;
+	text-align:right;
+	font-family: 'Open Sans', sans-serif;
+	font-size:12px;
+	line-height:21px;
+	color:#454545;
+	text-shadow:1px 1px #fbfbfb;
+}
+
+.header-meta .user{
+	display:inline-block;
+	padding:0 !important;
+}
+.header-meta .user a {
+	position:relative;
+	background: url(../images/user_32.png) no-repeat 0 0;
+	height:32px;
+	width:32px;
+	overflow:hidden;
+	text-indent:-99em;
+	display:block;
+}
+
+.header-meta .phone {
+	text-align:right;
+	display:inline-block;
+	font-size:18px;
+	line-height:22px;
+	color:#ec8f23;
+	margin:-3px 0 0 0;
+}
+
+/********************** Navigation ************************/
+nav {
+	text-align:right;
+	padding:5px 100px 0 0;
+	max-width:799px;
+}
+
+.sf-menu{
+	min-height:28px;
+	padding:0;
+	margin:0;
+	font-size:0;
+	line-height:0;
+}
+.sf-menu ul{
+	position:absolute;
+	top:-999em;
+	width:180px;
+	left:0;
+	display:none;
+	background:#fff;
+	text-align:center;
+	padding:10px 0;
+	box-shadow:0 0 2px #ccc;
+}
+.sf-menu > li{
+	position:relative;
+	display:inline-block;
+	margin:0 31px;
+}
+
+.sf-menu > li > a {
+	text-decoration:none;
+	display:block;
+	font-family: 'Open Sans', sans-serif;
+	font-size:18px;
+	line-height:22px;
+	text-transform:lowercase;
+	text-decoration:underline;
+	color:#c4c4c4;
+	padding:0;
+	text-shadow:1px 1px #fbfbfb;
+}
+
+	.sf-menu > li.current > a, .sf-menu > li:hover > a, .sf-menu > li.sfHover > a {
+		color:#454545;
+		text-decoration:none;
+	}
+
+.sf-menu li:hover ul,.sf-menu li.sfHover ul{top:35px; left:-55px; z-index:999;}
+.sf-menu li:hover li ul,ul.sf-menu li.sfHover li ul{top:-999em}
+.sf-menu li.current,.sf-menu li:hover,.sf-menu li.sfHover{
+	text-decoration:none;
+}
+.sf-menu li li a{
+	display:block;
+	margin:0;
+	position:relative;
+	text-decoration:none;
+	font-size:14px;
+	line-height:18px;
+	color:#454545;
+	overflow:hidden;
+	padding:8px 5px 8px 5px;
+	text-transform:lowercase;
+	font-family: 'Open Sans', sans-serif;
+}
+.sf-menu li li > a:hover, .sf-menu li li.sfHover > a, .sf-menu li li.current > a{
+	text-decoration:underline;
+}
+.sf-menu li li li a {
+	background:url(../images/header-bg.png);
+}
+.sf-menu li li{
+	float:none;
+	position:relative;
+	margin:0 0 1px 0;
+}
+.sf-menu li li:hover ul,ul.sf-menu li li.sfHover ul{left:181px;top:-10px;}
+
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	<package name="default" extends="struts-default">
+		
+		<action name="loginAction" class="com.map.action.LoginAction">
+			<result name="success">/factory.jsp</result>
+			<result name="fail">/login.html</result>
+		</action>
+		
+		<action name="registerAction" class="com.map.action.RegisterAction">
+			<result name="success">/redirect.jsp</result>
+		</action>
+		
+		<action name="loginOutAction" class="com.map.action.LoginOutAction">
+			<result name="success">/login.html</result>
+		</action>
+		
+	</package>
+
+</struts>
+	
